@@ -1,0 +1,13 @@
+.Rhistory
+.RData
+.Ruserdata
+.DS_Store
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+data/
+results/
+figures/
+logs/
+.env
