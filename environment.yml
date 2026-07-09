@@ -1,0 +1,17 @@
+name: grip-cv-ageing-open
+channels:
+  - conda-forge
+dependencies:
+  - r-base>=4.3
+  - r-survival
+  - r-metafor
+  - r-cmprsk
+  - r-splines2
+  - r-ggplot2
+  - r-dplyr
+  - r-readr
+  - r-tidyr
+  - r-stringr
+  - r-scales
+  - r-patchwork
+  - python>=3.10
