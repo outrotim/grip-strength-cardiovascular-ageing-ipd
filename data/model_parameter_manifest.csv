@@ -1,0 +1,31 @@
+parameter,value,scope,notes
+study_design,Harmonised individual-participant-data pooled analysis with external validation,overall,No individual-participant data redistributed in public repository
+primary_endpoint_1,First self-reported heart attack stroke or physician-diagnosed heart disease,P1,Death without prior CV event censored
+primary_endpoint_1_sample_size,103348,P1,Aggregate sample size only
+primary_endpoint_1_events,16149,P1,Aggregate event count only
+primary_endpoint_2,Cause-specific fatal cardiovascular death from harmonised End-of-Life records,P2,HRS MHAS SHARE only
+primary_endpoint_2_sample_size,75592,P2,Aggregate sample size only
+primary_endpoint_2_events,2816,P2,Aggregate event count only
+secondary_endpoint,All-cause mortality,S,Independent secondary endpoint
+nhanes_external_sample_size,4016,external_validation,NHANES 2011-2014 with NCHS 2019 linked mortality
+nhanes_external_cv_deaths,145,external_validation,Aggregate event count only
+inclusion_age,>=50 years,eligibility,Adults without baseline cardiovascular disease
+grip_exposure,Maximum left or right grip strength in kg,exposure,Sex-within-cohort z-standardised for primary per-SD estimates
+social_exposure,Harmonised social engagement score 0-10,exposure,Cohort-specific composite score
+multimorbidity_exposure,Count of 8 non-CV chronic conditions,exposure,Cardiovascular diagnoses excluded from count
+multimorbidity_cutoff,>=2 conditions,stage_definition,Salisbury consensus cutoff
+rcs_knots_grip,0.05;0.275;0.50;0.725;0.95,modeling,Quantiles for restricted cubic spline
+rcs_knots_social,3 knots,modeling,Used for social engagement spline
+primary_covariate_model,age sex cohort education marital status urban/rural income quintile smoking alcohol BMI spline physical activity,model_3,Diabetes hypertension and hypercholesterolaemia not separately adjusted because components of multimorbidity exposure
+meta_analysis,Random-effects REML with tau-squared based 95 percent prediction intervals,pooled_estimates,Implemented in metafor in the private analysis pipeline
+multiple_imputation,MICE m=20,sensitivity,Complete-case primary; imputation used as sensitivity analysis
+competing_risk,Fine-Gray subdistribution hazard with non-CV death as competing event,P2 sensitivity,P2 cohorts only
+bonferroni_threshold,0.0125,primary_contrasts,Four primary contrasts grip and multimorbidity at P1 and P2
+e_value_method,VanderWeele and Ding 2017,sensitivity,Used for unmeasured confounding robustness
+mediation_sample,CHARLS blood subsample n=9751,mediation,CRP HbA1c HDL and total cholesterol tested as candidate mediators
+mr_scope,Grip instruments from European-ancestry UK Biobank against CAD MI stroke AF,triangulation,Supports CAD and MI only; not all CV endpoints
+jm_scope,HRS ELSA SHARE 10 percent stratified subsample n=2131,triangulation,Current-value joint longitudinal-survival model
+time_varying_multistate_scope,HRS ELSA SHARE,stage_sensitivity,Counting-process person-wave sensitivity
+data_license_boundary,No individual-participant data redistributed,data_availability,Access through original cohort portals and data-use agreements
+code_license,MIT,license,Applies to code files
+aggregate_input_license,CC-BY 4.0,license,Applies to non-identifying aggregate parameter and figure-input tables
