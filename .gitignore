@@ -6,8 +6,22 @@ __pycache__/
 *.pyc
 *.pyo
 .ipynb_checkpoints/
-data/
+.env
+.env.*
+
+# Never commit restricted or participant-level data.
+raw_data/
+restricted_data/
+individual_participant_data/
+person_level_data/
+intermediate_data/
 results/
 figures/
 logs/
-.env
+outputs/
+*.rds
+*.RData
+*.dta
+*.xpt
+*.sas7bdat
+*.zip
