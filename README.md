@@ -19,7 +19,7 @@ The repository is intentionally small. It does not contain individual-participan
 
 ## Data availability
 
-Individual-participant data are not redistributed here. The primary analyses used Gateway-to-Global-Aging harmonised releases from CHARLS, ELSA, HRS, KLoSA, MHAS, and SHARE, plus NHANES 2011-2014 linked to the NCHS 2019 public-use mortality file. Access to the ageing-cohort individual-participant data remains governed by the original cohort data-use agreements and must be obtained directly from the relevant data providers.
+Individual-participant data are not redistributed here. The primary analyses used Gateway-to-Global-Aging harmonised releases from CHARLS, ELSA, HRS, KLoSA, MHAS, and SHARE, plus NHANES 2011-2014 linked to the NCHS 2019 public-use mortality file. Access to the ageing-cohort individual-participant data remains governed by the original cohort data-use agreements and must be obtained directly from the relevant data providers. Although NHANES and its public-use mortality file are available from their primary source, this repository does not redistribute source rows, analytic derivatives, or linked person-level records from those resources.
 
 This repository shares only:
 
@@ -70,6 +70,6 @@ Aggregate input tables in `data/` are released under the Creative Commons Attrib
 
 ## Citation
 
-Please cite the associated manuscript when available:
+Please cite the associated manuscript:
 
-Haoruijinlin et al. Endpoint Specificity Reveals a Grip-Strength Signal in Cardiovascular Ageing Across Six Harmonised Cohorts: Stage-Specific and Biomarker-Triangulated Evidence. Submitted.
+Zhang W, Xia Y, et al. Endpoint Specificity Reveals a Grip-Strength Signal in Cardiovascular Ageing Across Six Harmonised Cohorts: Stage-Specific and Biomarker-Triangulated Evidence. Manuscript submitted. Replace this placeholder with the journal citation and DOI after publication.
