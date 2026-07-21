@@ -1,30 +1,12 @@
-panel,domain,label,estimate_type,estimate,lower,upper,unit,n,events,i2,source,caveat
-endpoint_gradient,grip,Non-fatal CV,HR per 1-SD higher grip,0.90,0.84,0.97,ratio,103348,16149,82,Manuscript Table 2,P1 self-reported non-fatal endpoint
-endpoint_gradient,grip,All-cause death,HR per 1-SD higher grip,0.69,0.64,0.74,ratio,92273,13708,78,Manuscript Table 2,Secondary endpoint
-endpoint_gradient,grip,Cause-specific fatal CV,HR per 1-SD higher grip,0.59,0.53,0.64,ratio,75592,2816,16,Manuscript Table 2,P2 limited to cohorts with harmonised EoL cause-of-death linkage
-endpoint_gradient,grip,NHANES-linked CV death,HR per 1-SD higher grip,0.37,0.29,0.49,ratio,4016,145,NA,External validation,Independent mortality ascertainment system
-stage_specific,grip,Baseline Healthy (<2 conditions),HR per 1-SD higher grip,0.88,0.81,0.95,ratio,NA,NA,NA,Figure 2B baseline-stratified model,Baseline-fixed state definition
-stage_specific,grip,Baseline Multimorbid (>=2 conditions),HR per 1-SD higher grip,1.03,0.93,1.16,ratio,NA,NA,NA,Figure 2B baseline-stratified model,Baseline-fixed state definition
-stage_specific,grip,Time-varying currently Healthy,HR per 1-SD higher grip,0.93,0.91,0.96,ratio,NA,NA,NA,Supplementary Table S16,HRS/ELSA/SHARE only
-stage_specific,grip,Time-varying currently Multimorbid,HR per 1-SD higher grip,0.94,0.91,0.97,ratio,NA,NA,NA,Supplementary Table S16,HRS/ELSA/SHARE only
-biomarker_mediation,grip,CRP,Proportion mediated percent,3.8,-42.6,48.3,percent,9751,2348,NA,CHARLS blood mediation,Wide confidence interval includes zero
-biomarker_mediation,grip,HbA1c,Proportion mediated percent,-8.2,NA,NA,percent,9751,2348,NA,CHARLS blood mediation,Wide confidence interval includes zero
-biomarker_mediation,grip,HDL,Proportion mediated percent,-9.3,NA,NA,percent,9751,2348,NA,CHARLS blood mediation,Wide confidence interval includes zero
-biomarker_mediation,grip,Total cholesterol,Proportion mediated percent,-12.3,NA,NA,percent,9751,2348,NA,CHARLS blood mediation,Wide confidence interval includes zero
-biomarker_mediation,multimorbidity,CRP,Proportion mediated percent,2.3,1.0,3.7,percent,9751,2348,NA,CHARLS blood mediation,Partial mediation only
-biomarker_mediation,multimorbidity,HbA1c,Proportion mediated percent,4.0,1.8,6.3,percent,9751,2348,NA,CHARLS blood mediation,Partial mediation only
-triangulation,grip,Observational P2 Cox,HR or OR equivalent,0.59,0.53,0.64,ratio,75592,2816,16,Figure 3C,Observational association
-triangulation,grip,5-year lag sensitivity,HR or OR equivalent,0.66,NA,NA,ratio,NA,NA,NA,Figure 3C,Residual confounding cannot be excluded
-triangulation,grip,Time-varying multi-state Cox,HR or OR equivalent,0.93,0.91,0.96,ratio,NA,NA,NA,Supplementary Table S16,Subset of cohorts
-triangulation,grip,Joint longitudinal-survival current value,p value,0.027,NA,NA,p_value,2131,186,NA,Figure 3B,Subsample joint model
-triangulation,grip,MR coronary heart disease,OR per genetic liability proxy,0.65,NA,NA,ratio,NA,NA,NA,Figure 3A,European-ancestry UK Biobank instruments
-triangulation,grip,MR myocardial infarction,OR per genetic liability proxy,0.63,NA,NA,ratio,NA,NA,NA,Figure 3A,European-ancestry UK Biobank instruments
-triangulation,grip,NHANES external validation,HR per 1-SD higher grip,0.37,0.29,0.49,ratio,4016,145,NA,Figure 3C,Public-use linked mortality validation
-clinical_translation,grip,Grip reference,Reference kg,25,NA,NA,kg,NA,NA,NA,Supplementary Table S20,Practical reference point not diagnostic cutoff
-clinical_translation,grip,Harrell C age+sex,C statistic,0.640,NA,NA,c_statistic,NA,NA,NA,Supplementary Table S20,Model discrimination support only
-clinical_translation,grip,Harrell C augmented,C statistic,0.658,NA,NA,c_statistic,NA,NA,NA,Supplementary Table S20,Delta C equals 0.018
-clinical_translation,multimorbidity,PAF lower bound,Population attributable fraction percent,2.4,NA,NA,percent,NA,NA,NA,Supplementary Table S20,Observational and cohort-specific
-clinical_translation,multimorbidity,PAF upper bound,Population attributable fraction percent,13.8,NA,NA,percent,NA,NA,NA,Supplementary Table S20,Observational and cohort-specific
-clinical_translation,multimorbidity,Preventable non-fatal CV lower bound,Events per 1000 PY,2.3,NA,NA,events_per_1000_py,NA,NA,NA,Supplementary Table S20,Scenario estimate
-clinical_translation,multimorbidity,Preventable non-fatal CV upper bound,Events per 1000 PY,3.8,NA,NA,events_per_1000_py,NA,NA,NA,Supplementary Table S20,Scenario estimate
-clinical_translation,trial,Pragmatic RCT sample size per arm,Participants per arm,14145,NA,NA,participants,NA,2829,NA,Supplementary Table S20,Hypothetical trial-scale calculation
+analysis,endpoint,exposure,estimate,lower,upper,i2,cohorts,n,events,source,caveat
+primary,P1 non-fatal cardiovascular events,Grip strength,0.904875,0.860916,0.951079,61.4,6,81225,13296,B7 primary result lock,P1 is self-reported non-fatal cardiovascular events
+primary,P1 non-fatal cardiovascular events,Multimorbidity,1.223000,1.177000,1.271000,75.4,6,81225,13296,B7 primary result lock,Common fully adjusted model
+primary,P1 non-fatal cardiovascular events,Social engagement,0.980000,0.942000,1.019000,73.2,6,81225,13296,B7 primary result lock,Common fully adjusted model
+primary,P2 cardiovascular death,Grip strength,0.644786,0.601237,0.691489,0.0,3,60404,2009,B7 primary result lock,P2 includes MHAS with 17 cardiovascular deaths
+primary,P2 cardiovascular death,Multimorbidity,1.116000,0.937000,1.329000,82.2,3,60404,2009,B7 primary result lock,Common fully adjusted model
+primary,P2 cardiovascular death,Social engagement,0.893000,0.608000,1.311000,96.8,3,60404,2009,B7 primary result lock,Substantial between-cohort heterogeneity
+within-cohort MICE m=20,P1 non-fatal cardiovascular events,Grip strength,0.913978,0.870531,0.959593,66.0,6,NA,NA,B7 P1 MICE result,P1 only; Rubin pooled within cohort before REML
+5-year lag,P1 non-fatal cardiovascular events,Grip strength,0.909201,0.863876,0.956904,30.1,6,NA,NA,B7 supporting result,Follow-up re-originated at year 5
+5-year lag,P2 cardiovascular death,Grip strength,0.711006,0.642377,0.786967,0.0,3,NA,NA,B7 supporting result,Follow-up re-originated at year 5
+Fine-Gray competing-risk sensitivity,P2 cardiovascular death,Grip strength,0.687997,0.641017,0.738420,0.0,3,60404,2009,B7 supporting result,Non-cardiovascular death was competing event
+Sparse-event exclusion sensitivity,P2 cardiovascular death,Grip strength,0.645467,0.601683,0.692437,NA,2,NA,NA,B7 supporting result,Excludes MHAS due to 17 deaths and Cox warning
